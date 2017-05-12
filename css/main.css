@@ -1,0 +1,350 @@
+@charset "UTF-8";
+/*
+ * Base structure
+ */
+@font-face {
+  font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1494574688645');
+  src: url('../font/iconfont.eot?t=1494574688645#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/iconfont.woff?t=1494574688645') format('woff'), /* chrome, firefox */ url('../font/iconfont.ttf?t=1494574688645') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../font/iconfont.svg?t=1494574688645#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-exit:before {
+  content: "\e60e";
+}
+.icon-pingtai:before {
+  content: "\e69a";
+}
+.icon-4shebeijichushuju:before {
+  content: "\e743";
+}
+.icon-quanxianshezhi:before {
+  content: "\e67a";
+}
+.icon-liuchengpeizhi:before {
+  content: "\e81e";
+}
+.icon-jichushezhi:before {
+  content: "\e604";
+}
+.icon-guochengbiaozhun:before {
+  content: "\e859";
+}
+.icon-zizhuyuyue:before {
+  content: "\e600";
+}
+body {
+  font-family: arial, "Microsoft Yahei", "微软雅黑";
+}
+ul,
+li {
+  list-style: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/*baseColor*/
+.bg-blue {
+  background-color: #4da9eb;
+}
+.bg-qin {
+  background-color: #0fc092;
+}
+.bg-hong {
+  background-color: #f2725e;
+}
+.bg-huang {
+  background-color: #f7b965;
+}
+.header {
+  line-height: 80px;
+}
+.logo-info {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.bannerbox {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 508px;
+}
+.banner {
+  width: 1600px;
+  position: absolute;
+  left: 50%;
+  margin-left: -800px;
+}
+.body-bg img {
+  text-align: center;
+  z-index: -1;
+}
+.container {
+  position: relative;
+  height: 100%;
+}
+.container .main-body {
+  position: absolute;
+  right: 80px;
+  top: 30px;
+}
+.logo h1 {
+  display: inline;
+}
+.logo-info img {
+  width: 400px;
+}
+.company-info {
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.company-info li {
+  float: left;
+  padding: 0 15px;
+}
+.company-info a {
+  color: #3a3f4c;
+}
+.company-info i {
+  margin-right: 10px;
+}
+.main-body {
+  min-height: 540px;
+  position: relative;
+}
+.login-container {
+  padding: 30px 50px 50px 50px;
+  width: 370px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.login-container .icon-user,
+.login-container .icon-lock {
+  color: #afafaf;
+}
+.login-container .input-group-addon {
+  background-color: #fff;
+}
+.login-container .input-group {
+  margin-bottom: 15px;
+}
+.login-container .icon-remove-sign {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #ff0000;
+}
+.login-container .login-btn {
+  width: 100%;
+  height: 40px;
+  background-color: #1e4e78;
+}
+.login-container .no-remember {
+  color: #333333;
+}
+.login-container .no-remember:hover {
+  color: #1e4e78;
+}
+.login-container .no-remember-label {
+  float: right;
+}
+.login-container .remember {
+  color: #666666;
+}
+.form-signin-heading {
+  display: inline-block;
+  color: #1e4e78;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 2px solid #1e4e78;
+}
+.login-container .input-group {
+  width: 100%;
+  margin-top: 10px;
+}
+/*index*/
+.user-login-info {
+  display: inline-block;
+  float: right;
+  text-align: right;
+  font-size: 14px;
+  color: #3c3c3c;
+}
+.user-login-info i {
+  margin-right: 10px;
+}
+.user-login-info .re-login {
+  margin-right: 15px;
+}
+.user-login-info a {
+  color: #3c3c3c;
+}
+.user-login-info a:hover {
+  color: #1e4e78;
+}
+.user-do {
+  margin: 10px 0 0 0;
+}
+.user-do,
+.detail-info {
+  height: 30px;
+  line-height: 30px;
+}
+.user-do li,
+.detail-info li {
+  margin-right: 20px;
+  display: inline;
+}
+.user-do li:last-child,
+.detail-info li:last-child {
+  margin-right: 0;
+}
+/*top-nav*/
+.resources-nav-head {
+  background-color: #1e4e78;
+}
+.resources-nav a.active {
+  background-color: #f7b965;
+  color: #fff;
+}
+.resources-nav a:hover {
+  background-color: #f7b965;
+  color: #fff;
+}
+.resources-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.function {
+  height: 40px;
+  line-height: 40px;
+  float: right;
+}
+.function tbody > tr > td:hover > a {
+  border-radius: 4px;
+  background-color: #f2705c;
+  color: #fff;
+}
+.function tbody > tr > td > a {
+  padding: 2px 10px;
+  color: #cdddeb;
+}
+.function tbody > tr > td > a.active {
+  border-radius: 4px;
+  background-color: #f2705c;
+}
+/*resources-sidebar*/
+.resources-sidebar {
+  margin-top: 25px;
+}
+.resources-sidebar .panel-icon {
+  margin-right: 10px;
+  color: #6b6969;
+}
+.resources-sidebar .panel-info-more {
+  color: #f2705c;
+  float: right;
+}
+.resources-sidebar .panel-info-more:hover {
+  color: #1e4e78;
+}
+.resources-sidebar .app-title {
+  position: relative;
+  color: #f2705c;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+.resources-sidebar .icon-remove {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #969696;
+  margin-left: 10px;
+}
+.resources-sidebar .icon-remove:hover {
+  color: #1e4e78;
+}
+.resources-sidebar .app-img {
+  text-align: center;
+}
+.resources-sidebar .panel-detail-info {
+  padding-left: 0;
+}
+.resources-sidebar .panel-detail-info li {
+  line-height: 30px;
+}
+.resources-sidebar .panel-detail-info a {
+  color: #3c3c3c;
+}
+.resources-sidebar .panel-detail-info a:hover {
+  color: #1e4e78;
+}
+.resources-sidebar .panel-detail-info i {
+  margin-right: 10px;
+}
+.resources-main {
+  margin-top: 30px;
+}
+.resources-main .common-icon {
+  padding-left: 0;
+}
+.resources-main li {
+  display: inline-block;
+  margin: 20px;
+}
+.resources-main a {
+  display: inline-block;
+  position: relative;
+  width: 108px;
+  height: 108px;
+  line-height: 50px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  border-radius: 54px;
+  color: #fff;
+}
+.resources-main a:hover {
+  background-color: #1e4e78;
+}
+.resources-main a i {
+  font-size: 50px;
+  line-height: 90px;
+}
+.resources-main a span {
+  color: #333;
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .user-login-info {
+    display: none;
+  }
+}

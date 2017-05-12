@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>login</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+   <link href="./css/bootstrap.min.css" rel="stylesheet">
+   <link href="./css/main.css" rel="stylesheet">
+   <link href="./css/font-awesome.min.css" rel="stylesheet">
+   <!--[if IE 7]>
+   <link rel="stylesheet" href="./css/font-awesome-ie7.min.css">
+   <![endif]-->
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="header">
+  <div class="container">
+      <nav class="nar-bar">
+        <img src="./images/logo-icon.png" alt="" class="logo">
+        <span class="logo-info">人力资本投资管理</span>
+
+        <div class="user-login-info">
+          <ul class="user-do">
+             <li><span class="re-login"><i class="iconfont icon-exit"></i><a>退出系统</a></span></li>
+             <li><span class="logo-out"><i class="icon-user"></i><a>重新登陆</a></span></li>
+          </ul>
+         
+          <ul class="detail-info">
+            <li><a href="#">组织：股份集团 </a></li>
+            <li><a href="#">岗位：网页设计</a></li>
+            <li><a href="#">用户：超级管理员</a></li>
+          </ul>
+        </div>
+      </nav>
+  </div>
+</div>
+<div class="resources-nav-head">
+      <div class="container">
+        <nav class="resources-nav">
+          <a class="resources-nav-item active" href="#">菜单导航</a>
+          <a class="resources-nav-item" href="#">导航1</a>
+          <a class="resources-nav-item" href="#">导航2</a>
+          <a class="resources-nav-item" href="#">导航3</a>
+          <a class="resources-nav-item" href="#">导航4</a>
+          <table class="function">
+            <tbody>
+               <tr>
+                <td onclick="">
+                    <a href="#">首页</a>
+                </td>
+                <td onclick="return refresh('back')">
+                    <a href="#">后退</a>
+                </td>
+                <td onclick="return refresh('reload')" class="hand">
+                    <a href="#">刷新</a>
+                </td>
+                <td onclick="return refresh('forward')" class="hand">
+                    <a href="#">前进</a>
+                </td>
+                <td onclick="return getMenuHelp()" class="hand">
+                    <a href="#" class="active">帮助</a>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+        </nav>
+
+      </div>
+</div>
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-9 resources-main">
+      <ul class="common-icon clearfix">
+        <li><a class="bg-blue" href="#"><i class=" icon-cogs"></i><br><span>基础设置</span></a></li>
+        <li><a class="bg-qin" href="#"><i class="iconfont icon-guochengbiaozhun"></i></i><br><span>标准库</span></a></li>
+        <li><a class="bg-hong" href="#"><i class="iconfont icon-liuchengpeizhi"></i><br><span>流程配置</span></a></li>
+        <li><a class="bg-huang" href="#"><i class="iconfont icon-quanxianshezhi"></i></i><br><span>权限设置</span></a></li>
+      </ul>
+    </div>
+
+    <div class="col-sm-3  resources-sidebar">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+               <span><i class="icon-bullhorn panel-icon"></i>公告</span>
+               <span><a href="" class="panel-info-more">更多</a></span>
+            </h4>
+        </div>
+        <div class="panel-body">
+            <ul class="panel-detail-info">
+              <li><i class="icon-caret-right"></i><a href="#">EHR开通微信公众帐号手机客户端的通知</a></li>
+              <li><i class="icon-caret-right"></i><a href="#">EHR开通微信公众帐号手机客户端的通知</a></li>
+              <li><i class="icon-caret-right"></i><a href="#">EHR开通微信公众帐号手机客户端的通知</a></li>
+           </ul>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+               <span><i class=" icon-bell panel-icon"></i>信息提醒</span>
+               <span><a href="" class="panel-info-more">更多</a></span>
+            </h4>
+        </div>
+        <div class="panel-body">
+            <ul class="panel-detail-info">
+              <li><i class="icon-caret-right"></i><a href="#">EHR开通微信公众帐号手机客户端的通知</a></li>
+              <li><i class="icon-caret-right"></i><a href="#">EHR开通微信公众帐号手机客户端的通知</a></li>
+              <li><i class="icon-caret-right"></i><a href="#">EHR开通微信公众帐号手机客户端的通知</a></li>
+           </ul>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-head">
+            <h4 class="panel-title app-title">
+              <span>APP扫码登录，安全快捷</span><i class="icon-remove"></i>
+            </h4>
+        </div>
+        <div class="panel-body">
+            <div class="app-img">
+              <img src="./images/erweim.jpg" alt="">
+            </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+</body>
+</html>

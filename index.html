@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>login</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+   <link href="./css/bootstrap.min.css" rel="stylesheet">
+   <link href="./css/main.css" rel="stylesheet">
+   <link href="./css/font-awesome.min.css" rel="stylesheet">
+   <!--[if IE 7]>
+   <link rel="stylesheet" href="./css/font-awesome-ie7.min.css">
+   <![endif]-->
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="header">
+  <div class="container">
+      <nav class="nar-bar">
+        <img src="./images/logo-icon.png" alt="" class="logo">
+        <span class="logo-info">人力资本投资管理</span>
+    </nav>
+  </div>
+</div>
+
+<div class="body-bg">
+  <div class="bannerbox">  
+        <div class="banner">  
+            <img src="./images/login-bg.jpg">  
+        </div> 
+        <div class="container">
+          <div class="main-body">
+                <div class="login-container">
+                 <form class="form-signin" role="form">
+                  <h4 class="form-signin-heading"><span>账号密码登录</span></h4>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="icon-user"></i></span>
+                    <input type="text" class="form-control" placeholder="请输入账号" required>
+                  </div>
+                  <span class="erro-info"><i class="icon-remove-sign"></i>账号不存在</span>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="icon-lock"></i></span>
+                    <input type="text" class="form-control" placeholder="请输入密码" required>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input for="remember" id="remember" type="checkbox" value="checkd" class="remember">下次自动登录  
+                    </label>
+                    <label for="no-remember" class="no-remember-label"><a href="#" class="no-remember" id="no-remember">忘记密码</a></label>
+                  </div>
+                  <button class="btn btn-primary login-btn" type="submit">登&nbsp;录</button>
+               </form>
+           </div>
+          </div>
+        </div>
+    </div> 
+  </div>   
+</body>
+</html>
